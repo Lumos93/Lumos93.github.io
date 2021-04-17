@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Numberguess</title>
 </head>
 <body>
 <script>
@@ -10,9 +10,8 @@
     console.log(random);
     var input = -1;
     while(input!=random&&input!="exit"){
-        input = prompt("请输入一个0-10的数字");
+        input = prompt("下面让我们来玩一个猜数字游戏吧！我已经想好了，你来猜一猜！（请输入一个0-10的数字）");
         alert(
-//            先去掉空格再比较
             input.trim() == ""?"不能为空":
                 input == "exit"?"放弃了":
                     isNaN(input)?"必须是数字":
